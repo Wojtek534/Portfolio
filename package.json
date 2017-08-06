@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm-run-all --parallel --silent style runapp",
+    "start": "npm-run-all --parallel --silent style-watch runapp",
     "runapp": "node build/app.js",
-    "style": "sass src/style.scss:src/style.css"
+    "style": "sass src/style.scss:src/style.css",
+    "style-watch": "npm run style -- --watch"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "bootstrap": "^3.3.7",
     "chalk": "^2.0.1",
     "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
     "typed.js": "^2.0.5"
   },
   "devDependencies": {

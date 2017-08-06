@@ -1,0 +1,47 @@
+// Elements
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {}
+
+hr {
+  background-color: $hr-color;
+  height: 2px;
+  width: 400px;
+}
+
+.fa {
+  color: $submain-color;
+  margin: 40px;
+}
+
+.box {
+  height: 300px;
+}
+
+.bigbox {
+  height: 800px;
+}
+
+#main {}
+
+#about {
+  margin: 50px;
+}
+
+#project {
+  margin: 50px;
+  height: auto;
+  background: lightgray;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.stars {
+  color: $submain-color;
+  font-size: 20px;
+}

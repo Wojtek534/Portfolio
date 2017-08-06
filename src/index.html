@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="pageng">
+<html lang="en">
 
 <head>
     <!-- =========================Meta========================= -->
@@ -12,45 +12,228 @@
     <meta name="keywords" content="Wojciech Rzepka">
     <meta name="author" content="Wojciech Rzepka">
     <!-- =======================Css=========================== -->
-      <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div id="wrapper">
-        <div class="image-header">
-            <div class="text-header">
-                <h4>Portfolio Wojciech Rzepka</h4>
-            </div>
-        </div>
-        <div class="header">
+    <div class="wrapper">
+        <div id="header">
+            <!-- header -->
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <div class="container" id="navigation_menu">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="/"> Portfolio</a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     </div>
-                    <div class="nav navbar -nav navbar-right">
-                        <ul class="menu-right">
-                            <li><a class="navbar-brand fa fa-user-circle fa-3x" title="O Mnie" href="/"></a></li>
-                            <li><a class="navbar-brand fa fa-pencil-square-o 3x" title="Publikacje" href="/publikacje"></a></li>
-                            <li><a class="navbar-brand fa fa-camera-retro fa-3x" title="Palace" href="/"></a></li>
-                            <li><a class="navbar-brand fa fa-globe fa-3x" title="R" href="/"></a></li>
-                            <li><a class="navbar-brand fa fa-github-alt fa-3x" title="Github" href="https://github.com/Wojtek534/"
-                                    target="_blank"></a></li>
-                            <span class=""></span>
-                            </a>
-                            </li>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav navbar-center">
+                            <li><a href="#" class="fa fa-user-circle fa-3x" title="O mnie"></a></li>
+                            <li><a href="#" class="fa fa-github-alt fa-3x" title="Projekty"></a></li>
+                            <li><a href="#" class="fa fa-folder-open fa-3x"></a></li>
+                            <li><a href="#" class="fa fa-briefcase fa-3x"></a></li>
                         </ul>
                     </div>
                 </div>
+                <!-- /.navbar-collapse -->
             </nav>
         </div>
         <!-- header -->
-        <div id="main">
+        <div class="image-header">
         </div>
-        
+        <div class="text-header">
+            <h1>Portfolio Wojciech Rzepka</h1>
+            <hr>
+            <button class="btn btn-primary btn-lg" href="#project">Projekty</button>
+            <button class="btn btn-primary btn-lg">Umiejetnosci</button>
+            <button class="btn btn-primary btn-lg">Kontakt</button>
+        </div>
+        <div id="main">
+            <div class="container">
+                <div id="about">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <img src="/assets/MojeZdjecie.jpg" class="img-circle photo" />
+                        <h2> Wojciech Rzepka</h2>
+                        <hr>
+                        <h5>
+                            poznaniak, początkujący programista, absolwent zarządzania projektami i logistyki na Uniwersytecie Ekonomicznym w Poznaniu,
+                            pasjonat historii i geografii, zapalony miłośnik muzyki jazzowej, początkujący saksofonista (marny,
+                            ale to się zmieni!), rowerzysta i czytelnik papierowych książek.</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="separator">
+                <div class="overlay">
+                    <div class="container text-center"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div id="project">
+                    <div class="col-md-12 text-center">
+                        <h2>Projekty
+                            <hr>
+                        </h2>
+                        <div class="col-md-6 box">
+                            <span class="fa fa-github-alt fa-3x"></span>
+                            <h2>Github</h2>
+                            <h5>
+                                DataDisplay (prototyp) aplikacja napisana w C# z wykorzystaniem modelu MVVM. Analiza, prognozowanie, wyświetlenie oraz konwertowanie
+                                danych na format excel, xml oraz json. Docelowo w formie aplikacji webowej.
+                            </h5>
+                        </div>
+                        <div class="col-md-6 box">
+                            <span class="fa fa-user-o fa-3x"></span>
+                            <h2>Portfolio</h2>
+                            <h5>
+                                Strona portfolio (aktualnie przeglądana) zamieszczona na platformie github. Nie obejmuje projektów zamieszczonych na wordpress.
+                            </h5>
+                        </div>
+                        <div class="col-md-6 box">
+                            <span class="fa fa-globe fa-3x"></span>
+                            <h2>Geopolityka</h2>
+                            <h5>
+                                Zestawienie wszystkich krajów świata z podziałem na kontynenty, pod względem kilku kryteriów (liczba ludności, PKB itd.)
+                                wraz z zestawem wykresów. W docelowej formie projekt będzie zamieszczony na witrynie i dostosowany
+                                przy użyciu frameworku Shiny
+                            </h5>
+                        </div>
+                        <div class="col-md-6 box">
+                            <span class="fa fa-globe fa-3x"></span>
+                            <h2>Geopolityka</h2>
+                            <h5>
+                                Zestawienie wszystkich krajów świata z podziałem na kontynenty, pod względem kilku kryteriów (liczba ludności, PKB itd.)
+                                wraz z zestawem wykresów. W docelowej formie projekt będzie zamieszczony na witrynie i dostosowany
+                                przy użyciu frameworku Shiny
+                            </h5>
+                        </div>
+                        <div class="col-md-6 box">
+                            <span class="fa fa-coffee fa-3x"></span>
+                            <h2>Publikacje</h2>
+                            <h5>
+                                Projekty, referaty, fragmenty prac realizowanych podczas studiów lub w czasie wolnym.
+                            </h5>
+                        </div>
+                        <div class="col-md-6 box">
+                            <span class="fa fa-question fa-3x"></span>
+                            <h2>Aplikacja</h2>
+                            <h5>
+                                Aplikacja webowa napisana przy wykorzystaniu frameworku React.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="separator">
+                <div class="overlay">
+                    <div class="container text-center"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div id="skills">
+                    <div class="col-md-12 text-center">
+                        <h2>Umiejetnosci</h2>
+                        <hr>
+                        <div class="col-md-4 bigbox">
+                            <span class="fa fa-html5 fa-3x"></span>
+                            <h2>Programowanie</h2>
+                            <hr>
+                            <div class="stars">★★☆☆☆</div>
+                            <h5>C#</h5>
+                            <hr>
+                            <div class="stars">★★☆☆☆</div>
+                            <h5>JavaScript</h5>
+                            <i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>
+                            <hr>
+                            <div class="stars">★★★☆☆</div>
+                            <h5>HTML</h5>
+                            <hr>
+                            <div class="stars">★★★☆☆</div>
+                            <h5>CSS / SASS</h5>
+                        </div>
+                        <div class="col-md-4 bigbox">
+                            <span class="fa fa-html5 fa-3x"></span>
+                            <h2>Dane</h2>
+                            <hr>
+                            <div class="stars">★☆☆☆☆</div>
+                            <h5>R</h5>
+                            <i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>
+                            <hr>
+                            <div class="stars">★★★☆☆</div>
+                            <h5>MS Excel</h5>
+                            <hr>
+                            <div class="stars">★★★☆☆</div>
+                            <h5>SQL</h5>
+                            <hr>
+                            <div class="stars">★☆☆☆☆</div>
+                            <h5>Business Intelligence w VS i SSMS</h5>
+                        </div>
+                        <div class="col-md-4 bigbox">
+                            <span class="fa fa-html5 fa-3x"></span>
+                            <h2>Pozostale</h2>
+                            <hr>
+                            <div class="stars">★★☆☆☆</div>
+                            <h5>MS Project & Ms Visio</h5>
+                            <hr>
+                            <div class="stars">★☆☆☆☆</div>
+                            <h5>Photoshop</h5>
+                            <hr>
+                            <div class="stars">★★☆☆☆</div>
+                            <h5>Obsluga systemu Linux Mint/Ubuntu</h5>
+                            <hr>
+                            <div class="stars">★★☆☆☆</div>
+                            <h5>IDE VS Code</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="separator">
+            <div class="overlay">
+                <div class="container text-center"></div>
+            </div>
+        </div>
+        <nav id="colophon">
+            <div class="container text-center">
+                <div class="col col-md-12">
+                    <div class="section-title text-center">
+                        <h1>Kontakt</h1>
+                        <hr>
+                        <h1>Wypełnij formularz lub prześlij wiadomośc na adres:</h1>
+                        <h1>email@email.com</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <form id="ajax-contact" method="post" action="Php/msgSender.php">
+                                <input type="text" class="form-control" id="senderName" name="senderName" placeholder="Imię i nazwisko" required>
+                                <input type="text" class="form-control" id="senderEmail" name="senderEmail" placeholder="Email" required>
+                                <textarea rows="20" cols="100" id="senderMessage" name="senderMessage" placeholder="Wiadomość" class="form-control" id="message"
+                                    maxlength="999" style="height:150px" required></textarea>
+                                <button type="submit" id="MailSender">Wyslij</button>
+                                <div id="form-messages"></div>
+                            </form>
+                            <div id="SenderResult">
+                                <h2></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <p>2017 © Wojciech Rzepka</p>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="/bundle.js"></script>
 </body>
 
 </html>

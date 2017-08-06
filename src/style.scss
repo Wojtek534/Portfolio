@@ -1,9 +1,17 @@
 
 $main-color: #283655;
-$submain-color: #f4cc70;
+$submain-color: #d3a012;
+$light-color: #ffffff;
+//
 $hr-color: #d3a012;
+//
 $nav-color: transparent;
-$nav-color-hover:#ffffff;
+$nav-color-hover:#ffffff;          
+$a-hover: #d3a012;
+//
+$font-header-color:#283655;
+$font-text-color: #000000;
+
 $base-font: 12px;
 
 @import "scss/elements";

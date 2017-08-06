@@ -7,6 +7,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, '../src/index.html'));
 })
 
-app.listen(3000, function () {
-  console.log(chalk.green('App running on port 3000!'))
+app.use(express.static('src'))
+
+app.listen(4000, function () {
+  console.log(chalk.green('App running on port 4000!'))
 })

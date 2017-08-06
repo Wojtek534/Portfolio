@@ -1,0 +1,38 @@
+// Typography
+body,
+button,
+input,
+select,
+textarea {
+	color: $main-color;
+	font-size: $base-font;
+	line-height: 1.15;
+}
+h1{
+    font-size: $base-font + 20;
+    text-transform: uppercase;
+    color: $light-color;
+}
+h2{
+    font-size: $base-font + 16;
+    text-transform: uppercase;
+    color: $font-header-color;
+}
+h3{
+    font-size: $base-font + 14;
+    text-transform: uppercase;
+    color: $font-header-color;
+}
+h4{
+    font-size: $base-font + 10;
+    text-transform: uppercase;
+    color: $font-header-color;
+}
+h5{
+    font-size: $base-font + 6;
+    color: $font-text-color;
+}
+h6{
+    font-size: $base-font + 4;
+    color: $font-text-color;
+}

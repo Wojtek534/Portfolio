@@ -1,0 +1,46 @@
+// Images
+.photo {
+    transform: scale(0.6, 0.6);
+}
+
+#header {
+    //background: url('assets/Graben.jpg');
+    background: #283655;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 60vh;
+    background-size: cover;
+    padding: 20px;
+    background-attachment: fixed;
+    background-position: center;
+    height: auto;
+}
+
+.text-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: White;
+}
+
+#separator {
+    background: gray; //background: url('/assets/Shonbrunn.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#separator .overlay {
+    background: RGBA(34, 34, 34, 0.6);
+    min-height: 5px;
+    color: #ffffff;
+}
