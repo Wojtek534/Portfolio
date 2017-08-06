@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/Wojtek534/Portfolio-webapp#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0",
     "chalk": "^2.0.1",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",

@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 $main-color: #283655;
 $submain-color: #d3a012;
 $light-color: #ffffff;
@@ -9,10 +9,12 @@ $nav-color: transparent;
 $nav-color-hover:#ffffff;          
 $a-hover: #d3a012;
 //
-$font-header-color:#283655;
-$font-text-color: #000000;
+$font-header-color:#1D1D1D;
+$font-text-color: #1D1D1D;
 
 $base-font: 12px;
+$base-weight: 300;
+$base-line-height: 30px;
 
 @import "scss/elements";
 @import "scss/typography";

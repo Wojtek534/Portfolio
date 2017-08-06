@@ -4,35 +4,65 @@ button,
 input,
 select,
 textarea {
-	color: $main-color;
-	font-size: $base-font;
-	line-height: 1.15;
+    color: $main-color;
+    font-size: $base-font;
+    line-height: $base-line-height;
 }
-h1{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 10px;
+}
+
+h1 {
     font-size: $base-font + 20;
-    text-transform: uppercase;
-    color: $light-color;
-}
-h2{
-    font-size: $base-font + 16;
+    font-weight: $base-weight+500;
     text-transform: uppercase;
     color: $font-header-color;
+    line-height: $base-line-height;
 }
-h3{
+
+h2 {
+    font-size: $base-font + 16;
+    font-weight: $base-weight+500;
+    text-transform: uppercase;
+    color: $font-header-color;
+    line-height: $base-line-height;
+}
+
+h3 {
     font-size: $base-font + 14;
     text-transform: uppercase;
-    color: $font-header-color;
+    color: $light-color;
+    line-height: $base-line-height;
 }
-h4{
+
+h4 {
     font-size: $base-font + 10;
     text-transform: uppercase;
     color: $font-header-color;
+    line-height: $base-line-height;
 }
-h5{
+
+h5 {
     font-size: $base-font + 6;
     color: $font-text-color;
+    line-height: $base-line-height;
+    font-family: 'Roboto', sans-serif;
 }
-h6{
+
+h6 {
     font-size: $base-font + 4;
     color: $font-text-color;
+    line-height: $base-line-height;
+}
+
+p {
+    font-size: $base-font;
+    color: $font-text-color;
+    line-height: $base-line-height;
 }
