@@ -1,0 +1,13 @@
+
+$main-color: #283655;
+$submain-color: #f4cc70;
+$hr-color: #d3a012;
+$nav-color: transparent;
+$nav-color-hover:#ffffff;
+$base-font: 12px;
+
+@import "scss/elements";
+@import "scss/typography";
+@import "scss/navbar";
+@import "scss/images";
+@import "scss/footer";

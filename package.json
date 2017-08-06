@@ -1,0 +1,37 @@
+{
+  "name": "portfolio-webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm-run-all --parallel --silent style runapp",
+    "runapp": "node build/app.js",
+    "style": "sass src/style.scss:src/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wojtek534/Portfolio-webapp.git"
+  },
+  "keywords": [
+    "Wojciech",
+    "Rzepka"
+  ],
+  "author": "Wojciech Rzepka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wojtek534/Portfolio-webapp/issues"
+  },
+  "homepage": "https://github.com/Wojtek534/Portfolio-webapp#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "chalk": "^2.0.1",
+    "jquery": "^3.2.1",
+    "typed.js": "^2.0.5"
+  },
+  "devDependencies": {
+    "express": "^4.15.3",
+    "npm-run-all": "^4.0.2",
+    "webpack": "^3.4.1"
+  }
+}

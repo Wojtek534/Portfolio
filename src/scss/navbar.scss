@@ -1,0 +1,54 @@
+.navbar-default {
+    background-color: transparent;
+    border-color: #E7E7E7;
+    box-shadow: 0 1px 1px rgba(100, 100, 0, .2);
+    text-transform: uppercase;
+}
+// Text color
+.navbar-default .navbar-nav > li > a{
+    color: #ffffff;
+}
+// Brand style
+.navbar-default .navbar-brand {
+    color: #ffffff;
+    //color: $header-color;
+    font-size: 28px;
+}
+// Brand hover
+.navbar-default .navbar-brand:hover{
+    opacity: 0.8;
+}
+// Transform on scroll
+.lh-nav-bg-transform
+{
+    background-color: $nav-color-hover;
+}
+.lh-nav-bg-transform .navbar-nav > li > a,
+{
+    color: $main-color;
+    padding: 10px;
+}
+.lh-nav-bg-transform.navbar-default .navbar-brand {
+    color: $main-color;
+}
+// Active - selected item in navigation
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: $submain-color;
+    background-color: transparent;
+}
+// Dropdown menu
+@media (min-width:768px) {
+.navbar-nav>li>ul.dropdown-menu {
+    padding: 0;
+    max-width: 200px;
+    left: auto;
+    right: 0;
+    border-radius: 3px;
+}}
+
+@media (max-width:768px) {
+.navbar-default .navbar-collapse {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}}
