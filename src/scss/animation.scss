@@ -1,0 +1,35 @@
+.feature-img {
+  height: 100px;
+  width: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.front,
+.back {
+  transition: transform 1s;
+  backface-visibility: hidden;
+}
+
+.front {
+  position: absolute;
+}
+
+.back {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+}
+
+.feature-img:hover .front {
+  transform: rotateY(180deg);
+}
+
+.feature-img:hover .back {
+  transform: rotateY(360deg);
+}

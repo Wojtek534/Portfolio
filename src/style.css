@@ -1,11 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono");
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  padding-top: 50px; }
 
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 35px; }
+
+  #intro .btn {
+    visibility: hidden; }
+
+  #intro .fa {
+    visibility: hidden; } }
 hr {
   background-color: #d3a012;
   height: 2px;
@@ -24,7 +35,8 @@ hr.side {
 .btn {
   background-color: #1E2429;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  margin: 25px; }
 
 .btn:hover {
   background-color: #1E2429;
@@ -37,12 +49,52 @@ hr.side {
 .fa {
   color: #1D1D1D; }
 
-.row {
-  margin-top: 20px;
-  margin-bottom: 20px; }
+.page-section {
+  box-shadow: 2px 2px 2px 2px #ffffff;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+#intro {
+  background-color: #1E2429;
+  height: 500px;
+  color: #ffffff;
+  box-shadow: 0px 1px 1px #1E2429; }
+
+#intro .fa {
+  color: #ffffff;
+  margin: 10px;
+  opacity: 0;
+  transition-delay: 999999s; }
+
+#intro:hover .fa {
+  opacity: 1;
+  transition: 5s; }
+
+#intro:hover .btn {
+  border: 2px solid #ffffff; }
+
+#project .row {
+  margin: 25px; }
 
 .page-section {
-  box-shadow: 2px 2px 2px 2px #ffffff; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.project-item {
+  padding: 15px; }
+
+.flex-container {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center; }
+
+.flex-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 body,
 button,
@@ -76,7 +128,9 @@ h2 {
   line-height: 30px; }
 
 h3 {
-  font-size: 26px;
+  margin-top: 25px;
+  font-size: 34px;
+  font-weight: 800;
   text-transform: uppercase;
   color: #ffffff;
   line-height: 30px; }
@@ -103,30 +157,41 @@ p {
   color: #1D1D1D;
   line-height: 30px; }
 
+pre {
+  font-family: 'Fira Mono', monospace;
+  font-size: 16px; }
+
 .navbar {
   font-size: 20px;
   box-shadow: 3px 3px 3px 3px #1E2429; }
 
 .navbar ul {
-  margin-right: 20vw; }
+  margin-right: 25px; }
+
+.navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 24px;
+  margin-right: 15px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: 500; }
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  font-size: 24px;
+  margin-right: 15px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: 500; }
 
 .photo {
   transform: scale(0.8, 0.8); }
 
-.feature-img {
-  height: 100px;
-  width: 100px;
-  margin-left: 5px;
-  margin-right: 5px;
-  cursor: pointer; }
-
-.feature-img:hover {
-  transform: scale(1.15);
-  transition: all 0.3s; }
-
-#header {
+.header-background {
   background: #283655;
-  position: relative;
+  position: absolute;
   width: 100%;
   overflow: hidden;
   min-height: 60vh;
@@ -136,15 +201,27 @@ p {
   height: auto;
   box-shadow: 1px 1px 1px 1px #283655; }
 
-.text-header {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: White; }
+#intro {
+  background-color: #1E2429;
+  height: 500px;
+  color: #ffffff;
+  box-shadow: 0px 1px 1px #1E2429; }
+
+#intro .btn {
+  margin: 10px; }
+
+#intro .fa {
+  color: #ffffff;
+  margin: 10px;
+  opacity: 0;
+  transition-delay: 999999s; }
+
+#intro:hover .fa {
+  opacity: 1;
+  transition: 5s; }
+
+#intro:hover .btn {
+  border: 2px solid #ffffff; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -202,5 +279,35 @@ p {
 #MailSender:hover {
   background: #f1c95b;
   opacity: 0.85; }
+
+.feature-img {
+  height: 100px;
+  width: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 1s; }
+
+.front,
+.back {
+  transition: transform 1s;
+  backface-visibility: hidden; }
+
+.front {
+  position: absolute; }
+
+.back {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px; }
+
+.feature-img:hover .front {
+  transform: rotateY(180deg); }
+
+.feature-img:hover .back {
+  transform: rotateY(360deg); }
 
 /*# sourceMappingURL=style.css.map */

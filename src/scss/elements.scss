@@ -6,6 +6,19 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 35px;
+  }
+  #intro .btn {
+    visibility: hidden;
+  }
+  #intro .fa {
+    visibility: hidden;
+  }
 }
 
 hr {
@@ -30,6 +43,7 @@ hr.side {
   background-color: #1E2429;
   border: none;
   cursor: pointer;
+    margin: 25px;
 }
 
 .btn:hover {
@@ -46,10 +60,43 @@ hr.side {
   color: $font-text-color;
 }
 
-.row {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.page-section {
+  box-shadow: 2px 2px 2px 2px #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
+#intro {
+  background-color: #1E2429;
+  height: 500px;
+  color: $light-color;
+  box-shadow: 0px 1px 1px #1E2429;
+}
+
+#intro .fa {
+  color: $light-color;
+  margin: 10px;
+  opacity: 0;
+  transition-delay: 999999s;
+}
+
+#intro:hover .fa {
+  opacity: 1;
+  transition: 5s;
+}
+
+#intro:hover .btn {
+  border: 2px solid $light-color;
+}
+
+#project .row {
+  margin: 25px;
+}
+
 .page-section{
-      box-shadow: 2px 2px 2px 2px #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.project-item{
+  padding: 15px;
 }

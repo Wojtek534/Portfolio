@@ -35,7 +35,9 @@ h2 {
 }
 
 h3 {
-    font-size: $base-font + 14;
+    margin-top: 25px;
+    font-size: $base-font + 22;
+    font-weight: $base-weight+500;
     text-transform: uppercase;
     color: $light-color;
     line-height: $base-line-height;
@@ -65,4 +67,9 @@ p {
     font-size: $base-font;
     color: $font-text-color;
     line-height: $base-line-height;
+}
+
+pre{
+       font-family: 'Fira Mono', monospace;
+    font-size: $base-font + 4; 
 }
