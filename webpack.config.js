@@ -10,12 +10,12 @@ module.exports = {
     target: 'web',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'src')
+        path: path.resolve(__dirname, 'dist')
     },
-    plugins: [
+    plugis:[
         new HtmlWebpackPlugin({
-            template: 'index.template.ejs',
-            inject: 'body',
+            template: 'src/index.html',
+            inject: true
         })
     ]
 };
