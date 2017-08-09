@@ -1,26 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono');
-$main-color: #283655;
+$main-color: #1E2429;
 $submain-color: #d3a012;
+$darklight-color: #515769;
 $light-color: #ffffff;
 //
 $hr-color: #d3a012;
 //
 $nav-color: transparent;
-$nav-color-hover:#ffffff;          
+$nav-color-hover:#ffffff;
 $a-hover: #d3a012;
 //
-$font-header-color:#1D1D1D;
-$font-text-color: #1D1D1D;
-
+$font-header-color:#515769;
+$font-text-color: #77787a;
 $base-font: 12px;
 $base-weight: 300;
-$base-line-height: 30px;
-
-@import "scss/elements";
-@import "scss/flex";
-@import "scss/typography";
-@import "scss/navbar";
-@import "scss/images";
-@import "scss/footer";
-@import "scss/animation"
+$base-line-height: 1.4;
+//
+$font: 'Roboto', sans-serif;
+//
+$screen-small: 768px;
+$screen-medium: 992px;
+$screen-large: 1260px;
+@import "scss/base/elements";
+@import "scss/base/typography";
+@import "scss/components/sections";
+@import "scss/components/animation";
+@import "scss/components/buttons";
+@import "scss/components/images";
+@import "scss/layout/header";
+@import "scss/layout/navbar";
+@import "scss/layout/footer";

@@ -1,21 +1,19 @@
 var path = require('path');
 var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     devtool: 'inline-source-map',
     entry: [
-        path.resolve(__dirname, 'src/scripts/index')
+        path.resolve(__dirname, 'src/index')
     ],
     target: 'web',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'src')
     },
-    plugis:[
-        new HtmlWebpackPlugin({
-            template: 'src/index.html',
-            inject: true
-        })
-    ]
+    module: {
+        loaders: [
+            { test: /\.css$/, loader: "style-loader!css-loader" }
+        ]
+    }
 };

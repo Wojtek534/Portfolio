@@ -1,0 +1,25 @@
+.page-section {
+
+    box-shadow: 2px 2px 2px 2px #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#intro {
+    height: 500px;
+    color: $light-color;
+    box-shadow: 0px 1px 1px #1E2429;
+    background-color: #1E2429; //background-image: url('assets/Graben.jpg');
+    width: 100%;
+    color: $light-color;
+    box-shadow: 0px 1px 1px #1E2429;
+}
+
+#intro .btn {
+    background-color: transparent;
+}
+
+#intro:hover .btn {
+    border: 2px solid white;
+}
+

@@ -1,0 +1,55 @@
+// Elements
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $font;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 35px;
+  }
+  #intro .btn {
+    visibility: hidden;
+  }
+  #intro .fa {
+    visibility: hidden;
+  }
+}
+
+hr {
+  background-color: $hr-color;
+  height: 1px 0;
+  width: 400px;
+}
+
+hr.side {
+  background-color: $font-header-color;
+  height: 1px;
+  width: 400px;
+  margin-bottom: 50px;
+}
+
+.stars {
+  color: $submain-color;
+  font-size: 20px;
+}
+
+.fa {
+  color: $font-text-color;
+}
+
+.separator{
+  padding: 10px;
+}
+table th{
+  text-align: center;
+  vertical-align: center;
+}
+table td{
+  font-size: $base-font+6;
+}

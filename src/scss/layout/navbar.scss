@@ -1,0 +1,48 @@
+.navbar {
+    font-size: 20px;
+    background-color: $main-color;
+}
+
+.navbar ul {
+    margin-right: 5px;
+}
+
+.navbar .navbar-brand {
+    color: $light-color;
+    font-size: $base-font+4;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    line-height: $base-line-height;
+    font-weight: $base-weight+500;
+}
+
+.navbar .navbar-brand:hover {
+    border-bottom: 2px solid $light-color
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: $light-color;
+    font-size: $base-font+4;
+    margin-right: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    line-height: $base-line-height;
+    font-weight: $base-weight+500;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid $light-color;
+}
+
+.lh-nav-bg-transform {
+    background-color: $light-color;
+    border-bottom: 2px solid $light-color;
+}
+
+.lh-nav-bg-transform .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: $main-color;
+}
+
+.lh-nav-bg-transform .navbar-brand {
+    color: $main-color;
+}

@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -59,9 +60,9 @@
         <div class="col">
           <h3>Portfolio Wojciech Rzepka</h3>
           <hr>
-          <button class="btn btn-primary btn-lg">Projekty</button>
-          <button class="btn btn-primary btn-lg">Umiejetnosci</button>
-          <button class="btn btn-primary btn-lg">Kontakt</button>
+          <a href="#project"><button class="btn btn-primary btn-lg">Projekty</button></a>
+          <a href="#skills"><button class="btn btn-primary btn-lg">Umiejetnosci</button></a>
+          <a href="#colophon"><button class="btn btn-primary btn-lg">Kontakt</button></a>
         </div>
       </div>
     </div>
@@ -69,7 +70,7 @@
   <section class="page-section page-section-spacious bg-faded" id="about">
     <div class="container-fluid text-center">
       <div class="row justify-content-md-center">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <img src="/assets/MojeZdjecie.jpg" class="rounded-circle photo img-thumbnail" />
           <h2> Wojciech Rzepka</h2>
           <hr>
@@ -238,65 +239,77 @@
     </div>
   </section>
   <div class="separator bg-inverse"></div>
-  <section class="page-section bg-faded">
-    <div class="container text-center">
-      <div id="skills">
-        <div class="col-md-12 text-center">
-          <h2>Umiejetnosci</h2>
-          <hr>
-          <div class="col-md-4 bigbox">
-            <span class="fa fa-html5 fa-3x"></span>
+  <section class="page-section bg-faded" id="skills">
+    <div class="container-fluid text-center">
+      <h1>Umiejetnosci</h1>
+      <hr class="side">
+      <div class="row justify-content-md-center">
+        <div class="col-md-4">
+          <table class="table text-center">
             <h2>Programowanie</h2>
-            <hr>
-            <div class="stars">★★☆☆☆</div>
-            <h5>C#</h5>
-            <hr>
-            <div class="stars">★★☆☆☆</div>
-            <h5>JavaScript</h5>
-            <i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>
-            <hr>
-            <div class="stars">★★★☆☆</div>
-            <h5>HTML</h5>
-            <hr>
-            <div class="stars">★★★☆☆</div>
-            <h5>CSS / SASS</h5>
-          </div>
-          <div class="col-md-4 bigbox">
-            <span class="fa fa-html5 fa-3x"></span>
+            <tbody>
+              <tr>
+                <td>C#</td>
+                <td class="stars">★★☆☆☆</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td class="stars">★★☆☆☆</td>
+              </tr>
+              <tr>
+                <td>HTML/CSS/SASS</td>
+                <td class="stars">★★★☆☆</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-4">
+          <table class="table text-center">
             <h2>Dane</h2>
-            <hr>
-            <div class="stars">★☆☆☆☆</div>
-            <h5>R</h5>
-            <i class="fa fa-spinner fa-spin fa-1x fa-fw"></i>
-            <hr>
-            <div class="stars">★★★☆☆</div>
-            <h5>MS Excel</h5>
-            <hr>
-            <div class="stars">★★★☆☆</div>
-            <h5>SQL</h5>
-            <hr>
-            <div class="stars">★☆☆☆☆</div>
-            <h5>Business Intelligence w VS i SSMS</h5>
-          </div>
-          <div class="col-md-4 bigbox">
-            <span class="fa fa-html5 fa-3x"></span>
+            <tbody>
+              <tr>
+                <td>R</td>
+                <td class="stars">★★☆☆☆</td>
+              </tr>
+              <tr>
+                <td>MS Excel</td>
+                <td class="stars">★★★☆☆</td>
+              </tr>
+              <tr>
+                <td>SQL</td>
+                <td class="stars">★★★☆☆</td>
+              </tr>
+              <tr>
+                <td>Business Intelligence w VS i SSMS</td>
+                <td class="stars">★☆☆☆☆</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-4">
+          <table class="table text-center">
             <h2>Pozostale</h2>
-            <hr>
-            <div class="stars">★★☆☆☆</div>
-            <h5>MS Project & Ms Visio</h5>
-            <hr>
-            <div class="stars">★☆☆☆☆</div>
-            <h5>Photoshop</h5>
-            <hr>
-            <div class="stars">★★☆☆☆</div>
-            <h5>Obsluga systemu Linux Mint/Ubuntu</h5>
-            <hr>
-            <div class="stars">★★☆☆☆</div>
-            <h5>IDE VS Code</h5>
-          </div>
+            <tbody>
+              <tr>
+                <td>MS Project & Ms Visio</td>
+                <td class="stars">★★★☆☆</td>
+              </tr>
+              <tr>
+                <td>Photoshop</td>
+                <td class="stars">★☆☆☆☆</td>
+              </tr>
+              <tr>
+                <td>Obsluga systemu Linux Mint/Ubuntu</td>
+                <td class="stars">★★☆☆☆</td>
+              </tr>
+              <tr>
+                <td>IDE Visual Studio Code</td>
+                <td class="stars">★★★☆☆</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </div>
     </div>
   </section>
   <section class="bg-inverse">

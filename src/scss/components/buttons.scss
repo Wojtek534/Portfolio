@@ -1,0 +1,16 @@
+.btn {
+  background-color: #1E2429;
+  border: none;
+  cursor: pointer;
+    margin: 25px;
+}
+
+.btn:hover {
+  background-color: #1E2429;
+  opacity: 0.8;
+}
+
+.btn .fa {
+  margin-left: 10px;
+  color: $light-color;
+}
