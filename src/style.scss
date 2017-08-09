@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono');
 $main-color: #1E2429;
-$submain-color: #d3a012;
 $darklight-color: #515769;
 $light-color: #ffffff;
 //
@@ -9,24 +8,41 @@ $hr-color: #d3a012;
 //
 $nav-color: transparent;
 $nav-color-hover:#ffffff;
-$a-hover: #d3a012;
 //
 $font-header-color:#515769;
 $font-text-color: #77787a;
 $base-font: 12px;
 $base-weight: 300;
 $base-line-height: 1.4;
+$progress-color: #00B200;
 //
 $font: 'Roboto', sans-serif;
 //
-$screen-small: 768px;
-$screen-medium: 992px;
-$screen-large: 1260px;
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
 @import "scss/base/elements";
 @import "scss/base/typography";
 @import "scss/components/sections";
 @import "scss/components/animation";
 @import "scss/components/buttons";
+@import "scss/components/progressbar";
 @import "scss/components/images";
 @import "scss/layout/header";
 @import "scss/layout/navbar";

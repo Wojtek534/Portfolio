@@ -1,0 +1,33 @@
+.progress {
+    box-shadow: none;
+    height: 2px;
+    text-align: center;
+    vertical-align: center;
+    margin: 0 auto;
+}
+.program-table, .data-table, .rest-table{
+    cursor: pointer;
+}
+.program-table:hover, .data-table:hover, .rest-table:hover{
+    transform: scale(1.1,1.1);
+      transition: all 1s;
+}
+.progress .progress-bar {
+    background-color: $main-color;
+}
+
+.progress-box .progress .progress-bar {
+    background-color: $progress-color;
+}
+
+.program-table .progress .progress-bar {
+    background-color: #002E66;
+}
+
+.data-table .progress .progress-bar {
+    background-color: #A02C2C;
+}
+
+.rest-table .progress .progress-bar {
+    background-color: #166316;
+}

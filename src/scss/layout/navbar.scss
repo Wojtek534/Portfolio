@@ -1,5 +1,7 @@
+a{
+    text-decoration: none;
+}
 .navbar {
-    font-size: 20px;
     background-color: $main-color;
 }
 
@@ -17,12 +19,12 @@
 }
 
 .navbar .navbar-brand:hover {
-    border-bottom: 2px solid $light-color
+    border-bottom: 1px solid $light-color
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     color: $light-color;
-    font-size: $base-font+4;
+    font-size: $base-font;
     margin-right: 15px;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -31,18 +33,27 @@
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-    border-bottom: 2px solid $light-color;
+    border-bottom: 1px solid $light-color;
 }
 
 .lh-nav-bg-transform {
     background-color: $light-color;
     border-bottom: 2px solid $light-color;
+    box-shadow: 2px 2px 2px 2px $light-color;
 }
 
 .lh-nav-bg-transform .navbar-collapse .navbar-nav .nav-item .nav-link {
     color: $main-color;
 }
 
+.lh-nav-bg-transform .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid $main-color;
+}
+
 .lh-nav-bg-transform .navbar-brand {
     color: $main-color;
+}
+
+.lh-nav-bg-transform .navbar-brand:hover {
+    border-bottom: 2px solid $main-color;
 }

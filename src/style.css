@@ -6,7 +6,8 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  padding-top: 50px; }
+  padding-top: 45px;
+  transition: 1s; }
 
 @media screen and (max-width: 768px) {
   body {
@@ -25,7 +26,7 @@ hr {
 hr.side {
   background-color: #515769;
   height: 1px;
-  width: 400px;
+  width: 150px;
   margin-bottom: 50px; }
 
 .stars {
@@ -33,7 +34,7 @@ hr.side {
   font-size: 20px; }
 
 .fa {
-  color: #77787a; }
+  color: #515769; }
 
 .separator {
   padding: 10px; }
@@ -63,24 +64,25 @@ h6 {
   margin-top: 10px; }
 
 h1 {
-  font-size: 26px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #ffffff;
-  line-height: 1.4; }
+  font-size: 24px;
+  color: #515769;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase; }
 
 h2 {
-  font-size: 28px;
+  font-size: 22px;
   color: #515769;
   line-height: 1.4;
   font-weight: 600;
   margin-bottom: 15px; }
 
 h3 {
-  font-size: 26px;
+  font-size: 18px;
   color: #515769;
   line-height: 1.4;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 15px; }
 
 h4 {
@@ -98,11 +100,11 @@ h5 {
   margin-bottom: 15px; }
 
 h6 {
-  font-size: 20px;
-  color: #515769;
-  line-height: 1.4;
-  font-weight: 400;
-  margin-bottom: 15px; }
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1.4; }
 
 p {
   font-size: 18px;
@@ -131,6 +133,11 @@ p {
 #intro:hover .btn {
   border: 2px solid white; }
 
+.project-item:hover {
+  border-bottom: 2px solid #1E2429;
+  padding-top: 25px;
+  transition: 1s; }
+
 .trans--grow {
   -webkit-transition: width 1s ease-out;
   transition: width 1s ease-out;
@@ -139,41 +146,13 @@ p {
 .grow {
   width: 400px; }
 
-.feature-img {
-  height: 100px;
-  width: 100px;
-  margin-left: 5px;
-  margin-right: 5px;
-  cursor: pointer;
-  transition: all 1s; }
-
-.front,
-.back {
-  transition: transform 1s;
-  backface-visibility: hidden; }
-
-.front {
-  position: absolute; }
-
-.back {
-  transform: rotateY(180deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100px;
-  width: 100px; }
-
-.feature-img:hover .front {
-  transform: rotateY(180deg); }
-
-.feature-img:hover .back {
-  transform: rotateY(360deg); }
-
 .btn {
   background-color: #1E2429;
   border: none;
   cursor: pointer;
-  margin: 25px; }
+  margin: 15px;
+  text-transform: uppercase;
+  font-size: 18px; }
 
 .btn:hover {
   background-color: #1E2429;
@@ -183,11 +162,42 @@ p {
   margin-left: 10px;
   color: #ffffff; }
 
+.progress {
+  box-shadow: none;
+  height: 2px;
+  text-align: center;
+  vertical-align: center;
+  margin: 0 auto; }
+
+.program-table, .data-table, .rest-table {
+  cursor: pointer; }
+
+.program-table:hover, .data-table:hover, .rest-table:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 1s; }
+
+.progress .progress-bar {
+  background-color: #1E2429; }
+
+.progress-box .progress .progress-bar {
+  background-color: #00B200; }
+
+.program-table .progress .progress-bar {
+  background-color: #002E66; }
+
+.data-table .progress .progress-bar {
+  background-color: #A02C2C; }
+
+.rest-table .progress .progress-bar {
+  background-color: #166316; }
+
 .photo {
   transform: scale(0.8, 0.8); }
 
+a {
+  text-decoration: none; }
+
 .navbar {
-  font-size: 20px;
   background-color: #1E2429; }
 
 .navbar ul {
@@ -202,11 +212,11 @@ p {
   font-weight: 800; }
 
 .navbar .navbar-brand:hover {
-  border-bottom: 2px solid #ffffff; }
+  border-bottom: 1px solid #ffffff; }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 12px;
   margin-right: 15px;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
@@ -214,17 +224,24 @@ p {
   font-weight: 800; }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-  border-bottom: 2px solid #ffffff; }
+  border-bottom: 1px solid #ffffff; }
 
 .lh-nav-bg-transform {
   background-color: #ffffff;
-  border-bottom: 2px solid #ffffff; }
+  border-bottom: 2px solid #ffffff;
+  box-shadow: 2px 2px 2px 2px #ffffff; }
 
 .lh-nav-bg-transform .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #1E2429; }
 
+.lh-nav-bg-transform .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  border-bottom: 2px solid #1E2429; }
+
 .lh-nav-bg-transform .navbar-brand {
   color: #1E2429; }
+
+.lh-nav-bg-transform .navbar-brand:hover {
+  border-bottom: 2px solid #1E2429; }
 
 /*--------------------------------------------------------------
 # Footer

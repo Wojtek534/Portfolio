@@ -22,4 +22,10 @@
 #intro:hover .btn {
     border: 2px solid white;
 }
-
+.project-item{
+}
+.project-item:hover{
+    border-bottom: 2px solid $main-color;
+    padding-top: 25px;
+    transition: 1s;
+}

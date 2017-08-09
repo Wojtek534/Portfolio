@@ -2,7 +2,9 @@
   background-color: #1E2429;
   border: none;
   cursor: pointer;
-    margin: 25px;
+  margin: 15px;
+  text-transform: uppercase;
+  font-size: $base-font+6;
 }
 
 .btn:hover {
