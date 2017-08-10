@@ -5,13 +5,20 @@
     vertical-align: center;
     margin: 0 auto;
 }
-.program-table, .data-table, .rest-table{
+
+.program-table,
+.data-table,
+.rest-table {
     cursor: pointer;
 }
-.program-table:hover, .data-table:hover, .rest-table:hover{
-    transform: scale(1.1,1.1);
-      transition: all 1s;
+
+.program-table:hover,
+.data-table:hover,
+.rest-table:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 1s;
 }
+
 .progress .progress-bar {
     background-color: $main-color;
 }
@@ -30,4 +37,13 @@
 
 .rest-table .progress .progress-bar {
     background-color: #166316;
+}
+
+@media screen and (max-width: 768px) {
+    .program-table:hover,
+    .data-table:hover,
+    .rest-table:hover {
+        transform: scale(1, 1);
+        transition: all 1s;
+    }
 }

@@ -1,6 +1,7 @@
-a{
+a {
     text-decoration: none;
 }
+
 .navbar {
     background-color: $main-color;
 }
@@ -19,7 +20,7 @@ a{
 }
 
 .navbar .navbar-brand:hover {
-    border-bottom: 1px solid $light-color
+    border-bottom: 1px solid $light-color;
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -47,7 +48,7 @@ a{
 }
 
 .lh-nav-bg-transform .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-    border-bottom: 2px solid $main-color;
+    border-bottom: 1px solid $main-color;
 }
 
 .lh-nav-bg-transform .navbar-brand {
@@ -55,5 +56,6 @@ a{
 }
 
 .lh-nav-bg-transform .navbar-brand:hover {
-    border-bottom: 2px solid $main-color;
+    border-bottom: 1px solid $main-color;
+    color: $main-color;
 }

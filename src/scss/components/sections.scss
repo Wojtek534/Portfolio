@@ -1,5 +1,4 @@
 .page-section {
-
     box-shadow: 2px 2px 2px 2px #ffffff;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -9,7 +8,7 @@
     height: 500px;
     color: $light-color;
     box-shadow: 0px 1px 1px #1E2429;
-    background-color: #1E2429; //background-image: url('assets/Graben.jpg');
+    background-color: #1E2429;
     width: 100%;
     color: $light-color;
     box-shadow: 0px 1px 1px #1E2429;
@@ -22,10 +21,36 @@
 #intro:hover .btn {
     border: 2px solid white;
 }
-.project-item{
+
+.project-item {
+    cursor: pointer;
+    margin-bottom: 50px;
 }
-.project-item:hover{
-    border-bottom: 2px solid $main-color;
-    padding-top: 25px;
+.project-img{
+    height: 300px;
+    width: 500px;
+}
+.project-img:hover{
+    transform: scale(1.5,1.5);
+}
+.project-item:hover {
+    border-bottom: 1px solid $main-color;
     transition: 1s;
+    opacity: 0.9;
+}
+
+.feature-img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.feature-img:hover {
+    transform: scale(1.1, 1.1);
+}
+@media screen and (max-width: 768px) {
+.feature-img:hover {
+    transform: scale(1, 1);
+}
 }

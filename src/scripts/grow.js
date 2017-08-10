@@ -1,5 +1,6 @@
-jQuery(document).ready(function($){
-    setTimeout(function(){
+// write hr
+jQuery(document).ready(function ($) {
+    setTimeout(function () {
         $('.trans--grow').addClass('grow');
     }, 500);
 });
