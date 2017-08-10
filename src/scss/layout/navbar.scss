@@ -59,3 +59,37 @@ a {
     border-bottom: 1px solid $main-color;
     color: $main-color;
 }
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        text-align: center;
+        border: 0;
+    }
+    .lh-nav-bg-transform {
+        background-color: $main-color;
+        border-bottom: none;
+        box-shadow: none;
+        text-align: center;
+    }
+    .lh-nav-bg-transform .navbar-brand {
+        color: $light-color;
+        margin: 20px;
+    }
+    .lh-nav-bg-transform .navbar-brand:hover {
+        border-bottom: none;
+        color: $light-color;
+        text-decoration: none;
+    }
+    .navbar .navbar-brand:hover {
+        border-bottom: none;
+    }
+    .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+        border-bottom: none;
+    }
+    .lh-nav-bg-transform .navbar-collapse .navbar-nav .nav-item .nav-link {
+        color: $light-color;
+    }
+    .lh-nav-bg-transform .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+        border-bottom: none;
+    }
+}

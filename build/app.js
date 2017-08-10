@@ -9,6 +9,6 @@ app.get('/', function (req, res) {
 
 app.use(express.static('src'))
 
-app.listen(4000, function () {
-  console.log(chalk.green('App running on port 4000!'))
+app.listen(3000, function () {
+  console.log(chalk.green('App running on port 3000!'))
 })

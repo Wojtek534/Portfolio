@@ -49,6 +49,9 @@ table td {
 .photo {
   transform: scale(0.8, 0.8); }
 
+@media screen and (max-width: 720px) {
+  .photo {
+    transform: scale(0.5, 0.5); } }
 body,
 button,
 input,
@@ -122,13 +125,17 @@ p {
   padding-bottom: 50px; }
 
 #intro {
-  height: 500px;
+  padding: 100px 0 100px 0;
   color: #ffffff;
   box-shadow: 0px 1px 1px #1E2429;
   background-color: #1E2429;
-  width: 100%;
   color: #ffffff;
-  box-shadow: 0px 1px 1px #1E2429; }
+  box-shadow: 0px 1px 1px #1E2429;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: auto; }
 
 #intro .btn {
   background-color: transparent; }
@@ -153,8 +160,8 @@ p {
   opacity: 0.9; }
 
 .feature-img {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   margin: 10px;
   cursor: pointer; }
 
@@ -172,20 +179,30 @@ p {
 .grow {
   width: 400px; }
 
+svg {
+  animation: draw 5s ease infinite;
+  stroke-dasharray: 1500; }
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 1500; }
+  100% {
+    stroke-dashoffset: 0; } }
 .paral {
   background: url(./assets/geo3.png);
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden;
+  height: auto; }
 
 .paral .overlay {
   background: RGBA(34, 34, 34, 0.6);
   width: 100%;
-  height: 200px;
-  padding: 4% 0;
-  color: #ffffff; }
+  height: 100%;
+  padding: 4% 0; }
 
 .btn {
   background-color: #1E2429;
@@ -292,6 +309,37 @@ a {
   border-bottom: 1px solid #1E2429;
   color: #1E2429; }
 
+@media screen and (max-width: 768px) {
+  .navbar {
+    text-align: center;
+    border: 0; }
+
+  .lh-nav-bg-transform {
+    background-color: #1E2429;
+    border-bottom: none;
+    box-shadow: none;
+    text-align: center; }
+
+  .lh-nav-bg-transform .navbar-brand {
+    color: #ffffff;
+    margin: 20px; }
+
+  .lh-nav-bg-transform .navbar-brand:hover {
+    border-bottom: none;
+    color: #ffffff;
+    text-decoration: none; }
+
+  .navbar .navbar-brand:hover {
+    border-bottom: none; }
+
+  .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: none; }
+
+  .lh-nav-bg-transform .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: #ffffff; }
+
+  .lh-nav-bg-transform .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: none; } }
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

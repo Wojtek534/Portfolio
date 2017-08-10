@@ -5,13 +5,17 @@
 }
 
 #intro {
-    height: 500px;
+    padding: 100px 0 100px 0;
     color: $light-color;
     box-shadow: 0px 1px 1px #1E2429;
     background-color: #1E2429;
-    width: 100%;
     color: $light-color;
     box-shadow: 0px 1px 1px #1E2429;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
 }
 
 #intro .btn {
@@ -26,13 +30,16 @@
     cursor: pointer;
     margin-bottom: 50px;
 }
-.project-img{
+
+.project-img {
     height: 300px;
     width: 500px;
 }
-.project-img:hover{
-    transform: scale(1.5,1.5);
+
+.project-img:hover {
+    transform: scale(1.5, 1.5);
 }
+
 .project-item:hover {
     border-bottom: 1px solid $main-color;
     transition: 1s;
@@ -40,8 +47,8 @@
 }
 
 .feature-img {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     margin: 10px;
     cursor: pointer;
 }
@@ -49,8 +56,9 @@
 .feature-img:hover {
     transform: scale(1.1, 1.1);
 }
+
 @media screen and (max-width: 768px) {
-.feature-img:hover {
-    transform: scale(1, 1);
-}
+    .feature-img:hover {
+        transform: scale(1, 1);
+    }
 }
