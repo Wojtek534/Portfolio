@@ -1,9 +1,7 @@
-a {
-    text-decoration: none;
-}
-
+// Navbar
 .navbar {
     background-color: $main-color;
+    padding: 20px;
 }
 
 .navbar ul {
@@ -20,7 +18,7 @@ a {
 }
 
 .navbar .navbar-brand:hover {
-    border-bottom: 1px solid $light-color;
+color:$hr-color;
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -34,7 +32,7 @@ a {
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-    border-bottom: 1px solid $light-color;
+    color: $hr-color;
 }
 
 .lh-nav-bg-transform {
@@ -48,7 +46,7 @@ a {
 }
 
 .lh-nav-bg-transform .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-    border-bottom: 1px solid $main-color;
+    color: $hr-color;
 }
 
 .lh-nav-bg-transform .navbar-brand {
@@ -56,8 +54,7 @@ a {
 }
 
 .lh-nav-bg-transform .navbar-brand:hover {
-    border-bottom: 1px solid $main-color;
-    color: $main-color;
+    color: $hr-color;
 }
 
 @media screen and (max-width: 768px) {

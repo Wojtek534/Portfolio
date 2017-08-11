@@ -18,6 +18,9 @@ body {
 
   #intro .fa {
     visibility: hidden; } }
+a {
+  text-decoration: none; }
+
 hr {
   background-color: #d3a012;
   height: 1px 0;
@@ -179,15 +182,6 @@ p {
 .grow {
   width: 400px; }
 
-svg {
-  animation: draw 5s ease infinite;
-  stroke-dasharray: 1500; }
-
-@keyframes draw {
-  0% {
-    stroke-dashoffset: 1500; }
-  100% {
-    stroke-dashoffset: 0; } }
 .paral {
   background: url(./assets/geo3.png);
   background-size: cover;
@@ -259,11 +253,9 @@ svg {
   .rest-table:hover {
     transform: scale(1, 1);
     transition: all 1s; } }
-a {
-  text-decoration: none; }
-
 .navbar {
-  background-color: #1E2429; }
+  background-color: #1E2429;
+  padding: 20px; }
 
 .navbar ul {
   margin-right: 5px; }
@@ -277,7 +269,7 @@ a {
   font-weight: 800; }
 
 .navbar .navbar-brand:hover {
-  border-bottom: 1px solid #ffffff; }
+  color: #d3a012; }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #ffffff;
@@ -289,7 +281,7 @@ a {
   font-weight: 800; }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-  border-bottom: 1px solid #ffffff; }
+  color: #d3a012; }
 
 .lh-nav-bg-transform {
   background-color: #ffffff;
@@ -300,14 +292,13 @@ a {
   color: #1E2429; }
 
 .lh-nav-bg-transform .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-  border-bottom: 1px solid #1E2429; }
+  color: #d3a012; }
 
 .lh-nav-bg-transform .navbar-brand {
   color: #1E2429; }
 
 .lh-nav-bg-transform .navbar-brand:hover {
-  border-bottom: 1px solid #1E2429;
-  color: #1E2429; }
+  color: #d3a012; }
 
 @media screen and (max-width: 768px) {
   .navbar {
@@ -340,9 +331,6 @@ a {
 
   .lh-nav-bg-transform .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
     border-bottom: none; } }
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 #colophon {
   background: #1E2429;
   padding: 50px;

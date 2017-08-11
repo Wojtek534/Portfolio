@@ -1,3 +1,4 @@
+// Animations
 .trans--grow {
   -webkit-transition: width 1s ease-out;
   transition: width 1s ease-out;
@@ -6,20 +7,6 @@
 
 .grow {
   width: 400px;
-}
-
-svg {
-  animation: draw 5s ease infinite;
-  stroke-dasharray: 1500;
-}
-
-@keyframes draw {
-  0% {
-    stroke-dashoffset: 1500
-  }
-  100% {
-    stroke-dashoffset: 0
-  }
 }
 
 .paral {
@@ -33,7 +20,6 @@ svg {
   height: auto;
 }
 
-// Filter effect
 .paral .overlay {
   background: RGBA(34, 34, 34, 0.6);
   width: 100%;
