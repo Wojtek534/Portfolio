@@ -27,7 +27,7 @@ hr {
   width: 400px; }
 
 hr.side {
-  background-color: #515769;
+  background-color: #606162;
   height: 1px;
   width: 150px;
   margin-bottom: 50px; }
@@ -37,7 +37,7 @@ hr.side {
   font-size: 20px; }
 
 .fa {
-  color: #515769; }
+  color: #606162; }
 
 .separator {
   padding: 10px; }
@@ -74,7 +74,7 @@ h6 {
 
 h1 {
   font-size: 24px;
-  color: #515769;
+  color: #606162;
   line-height: 1.4;
   font-weight: 600;
   margin-bottom: 15px;
@@ -82,28 +82,28 @@ h1 {
 
 h2 {
   font-size: 22px;
-  color: #515769;
+  color: #606162;
   line-height: 1.4;
   font-weight: 600;
   margin-bottom: 15px; }
 
 h3 {
   font-size: 18px;
-  color: #515769;
+  color: #606162;
   line-height: 1.4;
   font-weight: 400;
   margin-bottom: 15px; }
 
 h4 {
   font-size: 24px;
-  color: #515769;
+  color: #606162;
   line-height: 1.4;
   font-weight: 500;
   margin-bottom: 15px; }
 
 h5 {
   font-size: 22px;
-  color: #515769;
+  color: #606162;
   line-height: 1.4;
   font-weight: 500;
   margin-bottom: 15px; }
@@ -117,7 +117,7 @@ h6 {
 
 p {
   font-size: 18px;
-  color: #77787a;
+  color: #6B6C6D;
   line-height: 1.4;
   font-weight: 300;
   margin-bottom: 15px; }
@@ -236,7 +236,7 @@ p {
   background-color: #1E2429; }
 
 .progress-box .progress .progress-bar {
-  background-color: #00B200; }
+  transition: none; }
 
 .program-table .progress .progress-bar {
   background-color: #002E66; }
