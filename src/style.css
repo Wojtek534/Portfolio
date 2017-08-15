@@ -182,6 +182,12 @@ p {
 .grow {
   width: 400px; }
 
+@media screen and (max-width: 768px) {
+  .grow {
+    width: 50px; }
+
+  hr {
+    width: 50px; } }
 .paral {
   background: url(./assets/geo3.png);
   background-size: cover;
