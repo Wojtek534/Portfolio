@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm-run-all --parallel --silent style-watch runapp",
     "runapp": "node build/app.js",
     "style": "sass src/style.scss:src/style.css",
@@ -23,11 +22,11 @@
   "license": "ISC",
   "homepage": "https://github.com/Wojtek534/Portfolio#readme",
   "dependencies": {
-    "chalk": "^2.0.1"
+    "animate.css": "^3.5.2"
   },
   "devDependencies": {
-    "animate.css": "^3.5.2",
     "css-loader": "^0.28.4",
+    "chalk": "^2.0.1",
     "express": "^4.15.3",
     "gulp": "^3.9.1",
     "gulp-minify": "^1.0.0",
