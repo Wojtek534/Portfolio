@@ -1,4 +1,6 @@
-## Portfolio ![alt-text](https://travis-ci.org/Wojtek534/Portfolio.svg?branch=master) ![alt-text](https://david-dm.org/wojtek534/Portfolio.svg)
+## Portfolio 
+![Build status](https://travis-ci.org/Wojtek534/Portfolio.svg?branch=master) 
+![Dependency status](https://david-dm.org/wojtek534/Portfolio.svg)
 
 #### Clone repository
 ```
