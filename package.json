@@ -11,10 +11,7 @@
     "lint": "node_modules/.bin/esw webpack.config.* src build",
     "localtunnel": "lt --port 3000 --subdomain rzepa"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Wojtek534/Portfolio.git"
-  },
+  "repository": "git+https://github.com/Wojtek534/Portfolio.git",
   "keywords": [
     "Wojciech",
     "Rzepka"
@@ -26,16 +23,16 @@
     "animate.css": "^3.5.2"
   },
   "devDependencies": {
-    "css-loader": "^0.28.4",
     "chalk": "^2.0.1",
+    "css-loader": "^0.28.4",
     "eslint": "^4.5.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-watch": "^3.1.2",
-    "php-loader": "^0.2.0",
     "express": "^4.15.3",
     "gulp": "^3.9.1",
     "gulp-minify": "^1.0.0",
     "npm-run-all": "^4.0.2",
+    "php-loader": "^0.2.0",
     "style-loader": "^0.18.2",
     "webpack": "^3.4.1",
     "webpack-dev-middleware": "^1.12.0",
