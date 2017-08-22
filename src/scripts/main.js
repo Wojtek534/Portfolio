@@ -1,4 +1,3 @@
-//var ScrollReveal = require('scrollreveal');
 // Smooth. Require full jquery lib!
 $('a[href*="#"]').on('click', function (e) {
     e.preventDefault();
@@ -7,27 +6,27 @@ $('a[href*="#"]').on('click', function (e) {
     }, 500, 'linear');
 });
 // Reveal
-window.sr = ScrollReveal({
-    reset: true
+window.sr = ScrollReveal({ // eslint-disable-line
+    reset: true 
 });
 
-sr.reveal('table');
-sr.reveal('#library');
-sr.reveal('#about');
-sr.reveal('.project-item');
+sr.reveal('table'); // eslint-disable-line
+sr.reveal('#library'); // eslint-disable-line
+sr.reveal('#about'); // eslint-disable-line
+sr.reveal('.project-item'); // eslint-disable-line
 
 // Moving bars
-var runbar = function (bar, stop) {
+let runbar = function (bar, stop) {
     $('.progress-box .progress .' + bar).animate({
             width: stop
         },
         4000);
 
-}
-var displayed = false;
+};
+let displayed = false;
 $(window).scroll(function () {
     if (displayed == false) {
-        var scroll = $(window).scrollTop();
+        let scroll = $(window).scrollTop();
         if (scroll > 100) {
             // Programming
             runbar('bar-c', '40%');
