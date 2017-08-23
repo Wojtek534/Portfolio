@@ -24,7 +24,8 @@ a {
 hr {
   background-color: #d3a012;
   height: 1px 0;
-  width: 400px; }
+  width: 400px;
+  margin-bottom: 30px; }
 
 hr.side {
   background-color: #606162;
@@ -148,6 +149,7 @@ p {
 
 .project-item {
   cursor: pointer;
+  margin-top: 50px;
   margin-bottom: 50px; }
 
 .project-img {
@@ -341,7 +343,9 @@ p {
   background: #1E2429;
   padding: 50px;
   color: #ffffff;
-  font-size: 20px; }
+  font-size: 20px;
+  bottom: 0px;
+  width: 100%; }
 
 #colophon a {
   color: #ffffff; }

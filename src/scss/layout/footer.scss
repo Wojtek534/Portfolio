@@ -1,15 +1,17 @@
 // Footer
 #colophon {
-  background: $main-color;
-  padding: 50px;
-  color: #ffffff;
-  font-size: 20px;
+    background: $main-color;
+    padding: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    bottom: 0px;
+    width: 100%;
 }
 
 #colophon a {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 #colophon a:hover {
-  color: #555555;
+    color: #555555;
 }
