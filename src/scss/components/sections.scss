@@ -21,16 +21,24 @@
 
 #intro .btn {
     background-color: transparent;
+    border: 1px solid transparent;
 }
 
 #intro:hover .btn {
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 .project-item {
     cursor: pointer;
     margin-top: 50px;
     margin-bottom: 50px;
+    border-bottom: 1px solid transparent;
+}
+
+.project-item:hover {
+    border-bottom: 1px solid $main-color;
+    transition: 1s;
+    opacity: 0.9;
 }
 
 .project-img {
@@ -40,12 +48,6 @@
 
 .project-img:hover {
     transform: scale(1.5, 1.5);
-}
-
-.project-item:hover {
-    border-bottom: 1px solid $main-color;
-    transition: 1s;
-    opacity: 0.9;
 }
 
 .feature-img {

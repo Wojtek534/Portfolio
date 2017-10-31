@@ -18,6 +18,22 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="./style.css">
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-105255199-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 
 <body id="body">
@@ -221,7 +237,8 @@
     <div class="container-fluid text-center">
       <div class="row justify-content-md-center">
         <div class="col-md-4">
-          <h1>Projekty</h1><hr class="trans--grow" />
+          <h1>Projekty</h1>
+          <hr class="trans--grow" />
           <div class="col project-item">
             <span class="fa fa-user-o fa-5x"></span>
             <h1>Portfolio</h1>
@@ -252,11 +269,13 @@
              <button class="btn btn-primary btn-lg">Github<span class="fa fa-github"/></button>
            </a>
           </div>
-          <h1>Projekty w trakcie prac</h1><hr class="trans--grow" />
+          <h1>Projekty w trakcie realizacji</h1>
+          <hr class="trans--grow" />
           <div class="col project-item">
             <span class="fa fa-cubes fa-5x"></span>
             <h1>Turnip</h1>
-            <p> Aplikacja webowa do wyświetlania i analizy danych w interaktywnych wykresach. Budowana przy użyciu React, Redux, R i Shiny
+            <p> Aplikacja webowa do wyświetlania i analizy danych w interaktywnych wykresach. Budowana przy użyciu React, Redux,
+              R i Shiny
             </p>
             <a href="https://github.com/Wojtek534/Turnip" target="_blank">
              <button class="btn btn-primary btn-lg">Github<span class="fa fa-github"/></button>
@@ -277,7 +296,6 @@
   </section>
   <section class="page-section bg-faded" id="library">
     <div class="container-fluid text-center">
-              <h1>Wykorzystywane biblioteki i aplikacje</h1>
       <div class="row justify-content-md-center">
         <div class="col">
           <a href="https://docs.microsoft.com/en-us/dotnet/csharp/csharp" target="_blank">

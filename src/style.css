@@ -142,15 +142,22 @@ p {
   height: auto; }
 
 #intro .btn {
-  background-color: transparent; }
+  background-color: transparent;
+  border: 1px solid transparent; }
 
 #intro:hover .btn {
-  border: 2px solid white; }
+  border: 1px solid white; }
 
 .project-item {
   cursor: pointer;
   margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  border-bottom: 1px solid transparent; }
+
+.project-item:hover {
+  border-bottom: 1px solid #1E2429;
+  transition: 1s;
+  opacity: 0.9; }
 
 .project-img {
   height: 300px;
@@ -158,11 +165,6 @@ p {
 
 .project-img:hover {
   transform: scale(1.5, 1.5); }
-
-.project-item:hover {
-  border-bottom: 1px solid #1E2429;
-  transition: 1s;
-  opacity: 0.9; }
 
 .feature-img {
   height: 80px;
@@ -189,7 +191,7 @@ p {
     width: 50px; }
 
   hr {
-    width: 50px; } }
+    width: 80px; } }
 .paral {
   background: url(./assets/geo3.png);
   background-size: cover;
